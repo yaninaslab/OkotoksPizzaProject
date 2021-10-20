@@ -1,0 +1,26 @@
+#mobile-header {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    background-color: lightsalmon;
+
+>nav {
+    display: grid;
+    text-align: center;
+    justify-self: end;
+}
+}
+nav>.text-color {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#mobile-header>img {
+    justify-self: start;
+    width: 120px;
+}
+
+#mobile-header>nav a {
+    margin: 3px;
+}

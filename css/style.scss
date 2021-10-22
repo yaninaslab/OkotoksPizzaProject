@@ -105,27 +105,72 @@ div {
     text-decoration: none;
     color: white;
     border-radius: 15px;
-    background-color: coral;
+    background-color: rgba(255, 127, 80, 0.733);
     place-content: center;
-    opacity: 0.7;
+    
 }
 
-article {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr auto 1fr;
+
+.wrapper{
     top: 14vh;
     width: 100%;
     min-height: 5vh;
     text-align: center;
-    background: cornsilk;
-    z-index: -1;
-
-   p {
-        color: black;
-        font-size: 0.7rem;
-
-    }
+    background:cornsilk;
+    height: 40px;
+    text-align: right;
 }
+
+.marquee {
+    background: cornsilk;
+    white-space: nowrap;
+    animation: rightThenLeft 10s linear;
+}
+
+
+article>h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(85, 78, 78);
+}
+
+#hours {
+    display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+    margin-top: 10px;
+    row-gap: 15px;
+}
+div {
+    display: grid;
+    place-items: center;
+
+}
+
+#callBnt {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 5%;
+}
+#callBnt a {
+    text-decoration: none;
+    color: rgb(161, 65, 0);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+    
+main>img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
 
 

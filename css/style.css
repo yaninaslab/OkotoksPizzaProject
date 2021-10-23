@@ -52,6 +52,28 @@ nav > .text-color {
   margin: 3px;
 }
 
+#page-footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+  margin-top: 15px;
+}
+
+div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+p {
+  color: #a14100;
+  font-weight: bold;
+}
+
 @-webkit-keyframes fadeInOutStart {
   0% {
     opacity: 1;
@@ -178,12 +200,17 @@ nav > .text-color {
           animation: fadeInOutEnd 10s ease-in-out infinite alternate;
 }
 
-div {
+section > div {
   z-index: 10;
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   place-items: center;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .button {
@@ -199,21 +226,20 @@ div {
   border-radius: 15px;
   background-color: rgba(255, 127, 80, 0.733);
   place-content: center;
+  border: solid 2px cornsilk;
 }
 
 .wrapper {
-  top: 14vh;
-  width: 100%;
-  min-height: 5vh;
-  text-align: center;
+  max-width: 400px;
   background: cornsilk;
   height: 40px;
-  text-align: right;
+  text-align: center;
 }
 
 .marquee {
   background: cornsilk;
   white-space: nowrap;
+  text-align: center;
   -webkit-animation: rightThenLeft 10s linear;
           animation: rightThenLeft 10s linear;
 }
@@ -233,10 +259,15 @@ article > h3 {
   row-gap: 15px;
 }
 
-div {
+article > div {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  grid-auto-flow: column;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #callBnt {
@@ -257,6 +288,7 @@ div {
   background: white;
   padding: 15px;
   border-radius: 15px;
+  border: solid 2px cornsilk;
 }
 
 main > img {

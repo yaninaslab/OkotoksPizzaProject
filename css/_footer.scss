@@ -1,0 +1,16 @@
+#page-footer {
+    display: grid;
+    place-items: center;
+    row-gap: 10px;
+    margin-top: 15px;
+}
+div {
+display: grid;
+grid-auto-flow: column;
+place-items: center;
+column-gap: 5px;
+}
+p {
+    color: rgb(161, 65, 0);
+    font-weight: bold;
+}

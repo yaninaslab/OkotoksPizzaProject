@@ -2,15 +2,19 @@
     display: grid;
     place-items: center;
     row-gap: 10px;
-    margin-top: 15px;
+    height: 100px;
+    background-color: lightsalmon;
+    padding-top: 20px;
 }
-div {
+#page-footer>div {
 display: grid;
 grid-auto-flow: column;
 place-items: center;
 column-gap: 5px;
 }
-p {
+#page-footer p {
     color: rgb(161, 65, 0);
-    font-weight: bold;
+    margin: 0;
+    font-size: 1em;
+    padding-bottom: 20px;
 }

@@ -104,7 +104,6 @@ section>div {
     height: 40px;
     display: grid;
     place-items: center;
-    margin: 10px;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -141,8 +140,10 @@ article>h3 {
     display: grid;
     place-items: center;
     grid-auto-flow: row;
-    margin-top: 10px;
-    row-gap: 15px;
+    row-gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
 }
 article>div {
     display: grid;
@@ -178,7 +179,13 @@ main>img {
     height: 200px;
 }
 
-
-
-
+h1 {
+    text-align: center;
+    color: rgb(161, 65, 0);
+    margin: 10px;
+}
+p {
+    margin: 10px;
+    font-size: 1em;
+}
 

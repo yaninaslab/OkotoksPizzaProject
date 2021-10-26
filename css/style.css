@@ -18,6 +18,14 @@ main {
   text-align: center;
 }
 
+h3 {
+  color: #554e4e;
+}
+
+h1 {
+  color: #a14100;
+}
+
 #mobile-header {
   display: -ms-grid;
   display: grid;
@@ -57,10 +65,12 @@ nav > .text-color {
   display: grid;
   place-items: center;
   row-gap: 10px;
-  margin-top: 15px;
+  height: 100px;
+  background-color: lightsalmon;
+  padding-top: 20px;
 }
 
-div {
+#page-footer > div {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -69,9 +79,11 @@ div {
           column-gap: 5px;
 }
 
-p {
+#page-footer p {
   color: #a14100;
-  font-weight: bold;
+  margin: 0;
+  font-size: 1em;
+  padding-bottom: 20px;
 }
 
 @-webkit-keyframes fadeInOutStart {
@@ -219,7 +231,6 @@ section > div {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin: 10px;
   font-weight: bold;
   text-decoration: none;
   color: white;
@@ -255,8 +266,9 @@ article > h3 {
   display: grid;
   place-items: center;
   grid-auto-flow: row;
-  margin-top: 10px;
-  row-gap: 15px;
+  row-gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 article > div {
@@ -294,5 +306,16 @@ article > div {
 main > img {
   width: 200px;
   height: 200px;
+}
+
+h1 {
+  text-align: center;
+  color: #a14100;
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */

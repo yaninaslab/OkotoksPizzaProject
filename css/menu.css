@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+  display: -ms-grid;
+  display: grid;
+  background: whitesmoke;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+main {
+  text-align: center;
+}
+
+h3 {
+  color: #554e4e;
+}
+
+h1 {
+  color: #a14100;
+}
+
+#mobile-header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-flow: column;
+  background-color: lightsalmon;
+}
+
+#mobile-header > nav {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+nav > .text-color {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+#mobile-header > img {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 120px;
+}
+
+#mobile-header > nav a {
+  margin: 3px;
+}
+
+#page-footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+  height: 100px;
+  background-color: lightsalmon;
+  padding-top: 20px;
+}
+
+#page-footer > div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+#page-footer p {
+  color: #a14100;
+  margin: 0;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  place-items: center;
+}
+
+.menu-item {
+  max-width: 300px;
+}
+
+.menu-item > img {
+  border-radius: 50%;
+}
+
+.menu-item > h2, p {
+  text-align: center;
+}
+
+.menu-item:hover {
+  background-color: lightsalmon;
+  -webkit-box-shadow: 0px 2px 2px gray;
+          box-shadow: 0px 2px 2px gray;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #a14100;
+  margin-top: 20px;
+}
+
+hr {
+  text-align: center;
+  color: #a14100;
+  margin: 15px;
+}
+/*# sourceMappingURL=menu.css.map */

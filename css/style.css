@@ -292,6 +292,27 @@ a {
   opacity: 0;
 }
 
+#animation-desktop {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 400px;
+  max-width: 1024px;
+}
+
+#animation-desktop > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
 .center-grid {
   width: 100%;
   display: -ms-grid;
@@ -311,6 +332,22 @@ a {
 }
 
 #animation > img:nth-child(3) {
+  -webkit-animation: fadeInOutEnd 10s ease-in-out infinite alternate;
+          animation: fadeInOutEnd 10s ease-in-out infinite alternate;
+}
+
+#animation-desktop > img:nth-child(1) {
+  opacity: 1;
+  -webkit-animation: fadeInOutStart 10s ease-in-out infinite alternate;
+          animation: fadeInOutStart 10s ease-in-out infinite alternate;
+}
+
+#animation-desktop > img:nth-child(2) {
+  -webkit-animation: fadeInOutMid 10s ease-in-out infinite alternate;
+          animation: fadeInOutMid 10s ease-in-out infinite alternate;
+}
+
+#animation-desktop > img:nth-child(3) {
   -webkit-animation: fadeInOutEnd 10s ease-in-out infinite alternate;
           animation: fadeInOutEnd 10s ease-in-out infinite alternate;
 }
@@ -460,11 +497,31 @@ p {
   font-size: 1em;
 }
 
+.home-main-desktop {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+#heroBtmImg {
+  width: 120px;
+  height: 120px;
+}
+
 @media only screen and (min-width: 300px) {
   .infoAd {
     display: none;
   }
   #desktop-callBtn {
+    display: none;
+  }
+  #animation-desktop {
+    display: none;
+  }
+  .home-main-desktop {
     display: none;
   }
 }
@@ -478,6 +535,29 @@ p {
     display: grid;
   }
   #desktop-callBtn {
+    display: -ms-grid;
+    display: grid;
+  }
+  #animation-desktop {
+    display: none;
+  }
+  .home-main-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #animation {
+    display: none;
+  }
+  #animation-desktop {
+    display: -ms-grid;
+    display: grid;
+  }
+  .home-main {
+    display: none;
+  }
+  .home-main-desktop {
     display: -ms-grid;
     display: grid;
   }

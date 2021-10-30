@@ -9,6 +9,23 @@ main>img {
     height: 200px;
 }
 
+#callBtn {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: cornsilk;
+
+}
+
+#callBtn a {
+    text-decoration: none;
+    color: rgb(161, 65, 0);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
 #desktop-callBtn {
     display: grid;
     place-items: center;
@@ -29,21 +46,27 @@ main>img {
 a {
     text-decoration: none;
 }
-section h2, hr, h5 {
+
+section h2,
+hr,
+h5 {
     text-align: center;
     color: rgb(161, 65, 0);
     margin: 15px;
 }
+
 h1 {
     text-align: center;
     color: rgb(161, 65, 0);
     margin: 10px;
 }
+
 p {
     margin: 20px;
     font-size: 0.8em;
 }
-.tablet-layout {
+
+.tablet-layout-1 {
     display: grid;
     place-items: center;
     grid-template-columns: 3fr 2fr;
@@ -55,6 +78,7 @@ p {
     width: 100%;
 
 }
+
 .dot {
     width: 15px;
     height: 15px;
@@ -62,6 +86,7 @@ p {
     background-color: white;
 
 }
+
 section>nav {
     display: grid;
     width: 200px;
@@ -71,24 +96,28 @@ section>nav {
     position: relative;
     top: -30px;
 }
+
 .pizza_box {
     display: none;
     place-items: center;
     width: 300px;
     height: 300px;
 }
+
 .pizza_box:target {
     display: grid;
 
-   ~.first_box {
-       display: none;
-   }
+    ~.first_box {
+        display: none;
+    }
+
     img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
 }
+
 .first_box {
     display: grid;
 }
@@ -97,16 +126,98 @@ section>nav {
     display: grid;
     place-items: center;
 }
+
+#gallery-grid {
+    width: 80%;
+    height: 350px;
+    margin: 10px;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    grid-template-areas:
+        "one two two"
+        "one two two"
+        "one three three"
+        "four four five"
+        "four four five"
+        "six six six"
+
+    img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+img:nth-child(1) {
+    grid-area: one;
+}
+
+img:nth-child(2) {
+    grid-area: two;
+}
+
+img:nth-child(3) {
+    grid-area: three;
+}
+
+img:nth-child(4) {
+    grid-area: four;
+}
+
+img:nth-child(5) {
+    grid-area: five;
+}
+
+img:nth-child(6) {
+    grid-area: six;
+}
+
+}
+
+
+
 @media only screen and (min-width: 300px) {
-    .tablet-layout {
+    .tablet-layout-1 {
+        display: none;
+    }
+
+    #desktop-callBtn {
+        display: none;
+    }
+
+    #gallery-grid {
         display: none;
     }
 }
+
 @media only screen and (min-width: 668px) {
-    .mobile-layout {
+    .mobile-layout-1 {
         display: none;
     }
-    .tablet-layout {
+
+    .tablet-layout-1 {
         display: grid;
+    }
+
+    #callBtn {
+        display: none;
+    }
+
+    #desktop-callBtn {
+        display: grid;
+    }
+    #gallery-grid {
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #callBtn {
+        display: none;
     }
 }

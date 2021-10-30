@@ -43,6 +43,11 @@ p {
     margin: 20px;
     font-size: 0.8em;
 }
+.tablet-layout {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3fr 2fr;
+}
 
 #gallery_container {
     display: grid;
@@ -91,4 +96,17 @@ section>nav {
 #lightbox-images {
     display: grid;
     place-items: center;
+}
+@media only screen and (min-width: 300px) {
+    .tablet-layout {
+        display: none;
+    }
+}
+@media only screen and (min-width: 668px) {
+    .mobile-layout {
+        display: none;
+    }
+    .tablet-layout {
+        display: grid;
+    }
 }

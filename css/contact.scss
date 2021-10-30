@@ -1,0 +1,64 @@
+@import 'global';
+@import 'header';
+@import 'footer';
+
+
+h1 {
+    text-align: center;
+    color: rgb(161, 65, 0);
+    margin: 10px;
+}
+#desktop-callBtn {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: cornsilk;
+
+}
+
+#desktop-callBtn a {
+    text-decoration: none;
+    color: rgb(161, 65, 0);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(161, 65, 0);
+}
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 361px;
+    width: 303px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 361px;
+    width: 303px;
+}
+#contact-page {
+    display: grid;
+    place-items: center;
+
+}
+.contact-section {
+    display: grid;
+    place-items: center;
+    row-gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr {
+    width: 80%;
+}
+#hours {
+    display: grid;
+    place-items: center;
+    row-gap: 20px;
+    margin-top: 15px;
+}

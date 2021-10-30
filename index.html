@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Okotoks Pizza | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header id="mobile-header">
         <img src="images/opplogo.png">
-        <nav>
-        <a class="text-color" href="index.html">Home</a>
-        <a class="text-color" href="pages/about.html">About Us</a>
-        <a class="text-color" href="pages/menu.html">Menu</a>
-        <a class="text-color" href="pages/contact.html">Contact</a>
-        </nav>
-        
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="pages/about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="pages/menu.html" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+            <div class="menu-drop">
+                <li class="nav-item"><a href="index.html" class="drop-link">Home</a></li>
+                <li class="nav-item"><a href="pages/about.html" class="drop-link">About Us</a></li>
+                <li class="nav-item"><a href="pages/menu.html" class="drop-link">Menu</a></li>
+                <li class="nav-item"><a href="pages/contact.html" class="drop-link">Contact</a></li>
+
+            </div>
     </header>
     <div class="wrapper">
         <marquee behavior="alternate"><span class="marquee">Indoor Dining Open</span></marquee>
-        </div>
-<!--<article class="infoAd">
+    </div>
+    <article class="infoAd">
+        <div class="tablet-wrapper">
             <p>Dine-in Open</p>
             <p>|</p>
-            <p>505 Bloor Street W</p>
-
-        </article>-->
-        <main>
-    <section id="animation">
-        <img src="images/change1.jpg" alt="">
-        <img src="images/change2.jpg" alt="">
-        <img src="images/change3.jpg" alt="">
-        <div>
-        <a class="button" href="">Order Online</a>
-        <a class="button" href="">Pickup Yourself</a>
+            <p>3415 Dixie Rd</p>
 </div>
-    </section>
-    <article id="home-main">
-        <h3>Best Pizza in the City</h3>
-        <h3>Fresh from the Pizza Oven</h3>
-        <div id="hours">
-        <p>Mon to Thu - 11AM-1AM</p>
-        <p>Fri to Sun - 12PM-12AM</p></div>
-        <div id="heroButtons">
-        <a class="button" href="">View Menu</a>
-        <a class="button" href="">Book a Table</a></div>
-    </article>
-   <img id="heroBtmImg" src="images/Sicilian.jpg" alt="">
-</main>
+        </article>
+    <main>
+        <div class="center-grid">
+        <section id="animation">
+            <img src="images/change1.jpg" alt="">
+            <img src="images/change2.jpg" alt="">
+            <img src="images/change3.jpg" alt="">
+            <div>
+                <a class="button" href="">Order Online</a>
+                <a class="button" href="">Pickup Yourself</a>
+            </div>
+        </section>
+        <article id="home-main">
+            <h3>Best Pizza in the City</h3>
+            <h3>Fresh from the Pizza Oven</h3>
+            <div id="hours">
+                <p>Mon to Thu - 11AM-1AM</p>
+                <p>Fri to Sun - 12PM-12AM</p>
+            </div>
+           
+            <div id="heroButtons">
+                <a class="button" href="pages/menu.html">View Menu</a>
+                <a class="button" href="pages/contact.html">Book a Table</a>
+            </div>
+        </article>
+        <img id="heroBtmImg" src="images/Sicilian.jpg" alt="">
+    </div>
+    </main>
     <article id="callBnt">
-    <a href="tel:(905) 624-0010">Call (905) 624-0010 to Order</a>
-</article>
+        <a href="tel:(905) 624-0010">Call (905) 624-0010 to Order</a>
+    </article>
+    <article id="desktop-callBtn">
+        <a>Call (905) 624-0010 to Order</a>
+    </article>
 
-<footer id="page-footer">
-    <div id="socialMedia">
-        <a target="_blank" href="https://www.linkedin.com/">
-            <img src="images/IN.jpg" alt="">
-        </a>
-        <a target="_blank" href="https://www.facebook.com/">
-            <img src="images/F.jpg" alt="">
-        </a>
-        <a target="_blank" href="https://www.instagram.com/">
-            <img src="images/I.jpg" alt="">
-        </a>
+    <footer id="page-footer">
+        <div id="socialMedia">
+            <a target="_blank" href="https://www.linkedin.com/">
+                <img src="images/IN.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/">
+                <img src="images/F.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+                <img src="images/I.jpg" alt="">
+            </a>
         </div>
-        
-    <p>Okotoks Pizza &copy;2021</p>
-</footer>
+
+        <p>Okotoks Pizza &copy;2021</p>
+    </footer>
 </body>
+
 </html>

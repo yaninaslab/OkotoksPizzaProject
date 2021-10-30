@@ -3,17 +3,8 @@
     align-items: center;
     grid-auto-flow: column;
     background-color: lightsalmon;
+    height: 120px;
 
->nav {
-    display: grid;
-    text-align: center;
-    justify-self: end;
-}
-}
-nav>.text-color {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
 }
 
 #mobile-header>img {
@@ -21,6 +12,92 @@ nav>.text-color {
     width: 120px;
 }
 
-#mobile-header>nav a {
+#mobile-header> a {
     margin: 3px;
+}
+
+.nav-menu {
+    display: none;
+    justify-self: end;
+    grid-auto-flow: column;
+    padding-right: 10px;
+    column-gap: 20px;
+}
+
+.nav-link {
+    font-size: 19px;
+    color: white;
+}
+.nav-link:hover {
+    color: #a14100;
+}
+.drop-link {
+    color: #a14100;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.hamburger {
+    display: block;
+    justify-self: end;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+.menu-drop {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: cornsilk;
+    top: 120px;
+    z-index: 99;
+}
+.hamburger:hover {
+    .nav-menu {
+        display: none;
+    }
+    .menu-drop {
+        display: grid;
+        place-items: center;
+        row-gap: 10px;
+
+    }
+}
+.nav-item>a:hover {
+    color: salmon;
+}
+@media only screen and (min-width: 300px){
+    .bar {
+        display: grid;
+    }
+}
+@media only screen and (min-width: 668px){
+    .bar {
+        display: none;
+    }
+    .nav-menu{
+    display: grid;
+    justify-self: end;
+    grid-auto-flow: column;
+    padding-right: 10px;
+    column-gap: 20px;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2rem;
+    }
 }

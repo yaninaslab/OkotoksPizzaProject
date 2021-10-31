@@ -1,0 +1,54 @@
+#gallery-grid {
+    width: 80%;
+    height: 30vh;
+    margin-top: 10vh;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    grid-template-areas: "one two two"
+    "one two two"
+    "one three three"
+    "four four five"
+    "four four five"
+    "six six six"
+    "six six six";
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    img:nth-child(1) {
+        grid-area: one;
+    }
+
+    img:nth-child(2) {
+        grid-area: two;
+    }
+
+    img:nth-child(3) {
+        grid-area: three;
+    }
+
+    img:nth-child(4) {
+        grid-area: four;
+    }
+
+    img:nth-child(5) {
+        grid-area: five;
+    }
+
+    img:nth-child(6) {
+        grid-area: six;
+    }
+    img:nth-child(7) {
+        grid-area: six;
+
+}
+}

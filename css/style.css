@@ -155,7 +155,7 @@ a {
   }
 }
 
-#page-footer {
+#page-footer, #about-footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -175,6 +175,22 @@ a {
 }
 
 #page-footer p {
+  color: #a14100;
+  margin: 0;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+#about-footer > div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+#about-footer p {
   color: #a14100;
   margin: 0;
   font-size: 1em;

@@ -29,17 +29,31 @@ a {
     text-decoration: none;
     color: rgb(161, 65, 0);
 }
-.mapouter {
+.mapouter_mobile {
     position: relative;
     text-align: center;
     height: 361px;
     width: 303px;
+    margin-bottom: 10px;
 }
-.gmap_canvas {
+.gmap_canvas_mobile {
     overflow: hidden;
     background: none !important;
     height: 361px;
     width: 303px;
+}
+.mapouter_bigger {
+    position: relative;
+    text-align: right;
+    height: 361px;
+    width: 600px;
+    margin-bottom: 10px;
+}
+.gmap_canvas_bigger {
+    overflow: hidden;
+    background: none !important;
+    height: 361px;
+    width: 600px;
 }
 #contact-page {
     display: grid;
@@ -61,4 +75,27 @@ hr {
     place-items: center;
     row-gap: 20px;
     margin-top: 15px;
+}
+
+@media only screen and (min-width: 300px) {
+    .mapouter_bigger {
+        display: none;
+    }
+    .gmap_canvas_bigger {
+        display: none;
+    }
+}
+@media only screen and (min-width: 668px) {
+    .mapouter_mobile {
+        display: none;
+    }
+    .gmap_canvas_mobile {
+        display: none;
+    }
+    .mapouter_bigger {
+        display: grid;
+    }
+    .gmap_canvas_bigger {
+        display: grid;
+    }
 }

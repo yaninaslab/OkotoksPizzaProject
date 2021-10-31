@@ -1,4 +1,4 @@
-#page-footer {
+#page-footer, #about-footer {
     display: grid;
     place-items: center;
     row-gap: 10px;
@@ -18,3 +18,15 @@ column-gap: 5px;
     font-size: 1em;
     padding-bottom: 20px;
 }
+#about-footer>div {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    column-gap: 5px;
+    }
+    #about-footer p {
+        color: rgb(161, 65, 0);
+        margin: 0;
+        font-size: 1em;
+        padding-bottom: 20px;
+    }

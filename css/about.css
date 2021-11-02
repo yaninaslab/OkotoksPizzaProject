@@ -41,7 +41,7 @@ h2 {
   height: 120px;
 }
 
-#mobile-header > img {
+#mobile-header img {
   -ms-grid-column-align: start;
       justify-self: start;
   width: 120px;

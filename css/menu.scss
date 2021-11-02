@@ -14,7 +14,22 @@ hr {
   color: rgb(161, 65, 0);
   margin: 15px;
 }
+#callBtn {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: cornsilk;
 
+}
+
+#callBtn a {
+  text-decoration: none;
+  color: rgb(161, 65, 0);
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
 #desktop-callBtn {
   display: grid;
   place-items: center;
@@ -174,5 +189,24 @@ h3:hover {
   }
   ~#pizza-menu {
     display: none;
+  }
+}
+@media only screen and (min-width: 300px) {
+  #desktop-callBtn {
+    display: none;
+}
+}
+@media only screen and (min-width: 668px) {
+  #callBtn {
+    display: none;
+}
+
+#desktop-callBtn {
+    display: grid;
+}
+}
+@media only screen and (min-width: 1024px) {
+  #callBtn {
+      display: none;
   }
 }

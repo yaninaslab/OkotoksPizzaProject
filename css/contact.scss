@@ -24,7 +24,22 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+#callBtn {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: cornsilk;
 
+}
+
+#callBtn a {
+    text-decoration: none;
+    color: rgb(161, 65, 0);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
 a {
     text-decoration: none;
     color: rgb(161, 65, 0);
@@ -84,6 +99,9 @@ hr {
     .gmap_canvas_bigger {
         display: none;
     }
+    #desktop-callBtn {
+        display: none;
+    }
 }
 @media only screen and (min-width: 668px) {
     .mapouter_mobile {
@@ -97,5 +115,17 @@ hr {
     }
     .gmap_canvas_bigger {
         display: grid;
+    }
+    #callBtn {
+        display: none;
+    }
+
+    #desktop-callBtn {
+        display: grid;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #callBtn {
+        display: none;
     }
 }

@@ -22,11 +22,7 @@ h3 {
   color: #554e4e;
 }
 
-h1 {
-  color: #a14100;
-}
-
-h2 {
+h1, h2 {
   color: #a14100;
 }
 
@@ -234,6 +230,10 @@ main > img {
   font-size: 1.2em;
   text-align: center;
   font-weight: bold;
+}
+
+div > h1 {
+  font-size: 1.5em;
 }
 
 a {

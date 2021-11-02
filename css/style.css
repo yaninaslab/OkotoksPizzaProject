@@ -22,11 +22,7 @@ h3 {
   color: #554e4e;
 }
 
-h1 {
-  color: #a14100;
-}
-
-h2 {
+h1, h2 {
   color: #a14100;
 }
 
@@ -447,8 +443,8 @@ article > div {
 .tablet-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto 1fr;
-      grid-template-columns: 1fr auto 1fr;
+  -ms-grid-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr;
 }
 
 #heroButtons {
